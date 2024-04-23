@@ -1,0 +1,20 @@
+<html>
+<head>
+<title>Ejercicio 4</title>
+<style>
+  .rojo {
+    color: red;
+  }
+</style>
+</head>
+<body>
+  <p id="texto">Este es un texto.</p>
+  <button onclick="cambiarColor()">Cambiar Color</button>
+  <script>
+    function cambiarColor() {
+      var textoElement = document.getElementById("texto");
+      textoElement.classList.add("rojo");
+    }
+  </script>
+</body>
+</html>

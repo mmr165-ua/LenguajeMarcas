@@ -1,0 +1,168 @@
+body{
+    display: grid;
+    grid-template-columns: 1 3fr;
+    grid-template-rows: max-content max-content min-content;
+    grid-template-areas: 
+                        "cabecera opciones"
+                        "catalogo catalogo"
+                        "pie pie";
+    align-items:self-end;
+    font-family: fantasy;
+}
+
+
+
+header {
+    display: grid;
+    background-color: #ffffff;
+    grid-template-columns: 200px auto;
+    grid-template-rows: 90px 90px;
+    grid-template-areas: "logo nombre "
+                        "logo slogan";
+    grid-area: cabecera; 
+}
+
+.logo{
+    width: 180px;
+    grid-area: logo;
+}
+
+.slogan{
+    grid-area:slogan;
+    padding: 15px;
+}
+
+.nombre {
+    grid-area: nombre;
+    font-size: 80px;
+    
+}
+
+nav{
+    grid-area: opciones;
+}
+
+.opciones {
+    display: flex;
+    justify-content: space-between;
+    gap: 2px;
+    list-style: none;
+    padding: 10px;
+    
+}
+
+.opciones>li{
+    flex-grow: 1;
+    text-align: center;
+    font-size: 20px;
+    
+    
+}
+.opciones>li>a, .opciones>li>a:link {
+    padding: 8px;
+    width: 100%;
+    text-decoration: none;
+    display: block;
+    color: #343a40;
+}
+.catalogo{
+    grid-area:catalogo;
+    background-color: #212529;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(2,1fr);
+    grid-template-areas: 
+                        "1 2 3 4"
+                        "5 6 7 8";
+    padding: 15px;
+    justify-content: stretch;
+    gap: 10px;
+}
+
+
+.articulo{
+    background-color: #6c757d;
+    display: flex;
+    flex-direction: column;
+    border-radius: 2.5%;
+    padding: 10px 10px;
+
+}
+
+
+.articulo>img{
+    max-width: 100%;
+    padding: 10px;
+    max-height: 270px;
+}
+
+.primer_articulo{
+    grid-area: 1;
+}
+
+.segundo_articulo{
+    grid-area: 2;
+}
+
+.tercer_articulo{
+    grid-area: 3;
+}
+
+.cuarto_articulo{
+    grid-area: 4;
+}
+
+.quinto_articulo{
+    grid-area: 5;
+}
+
+.sexto_articulo{
+    grid-area: 6;
+}
+
+.septimo_articulo{
+    grid-area: 7;
+}
+
+.octavo-articulo{
+    grid-area: 8;
+}
+footer{
+    grid-area:pie;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "terminos nosotros";
+    background-color: #000;
+}
+
+.terminos{
+    grid-area: terminos;
+    color: #f8f9fa;
+    padding: 5px;
+    margin: 5px;
+}
+
+.condiciones{
+    list-style: none;
+}
+
+.condiciones>li>*{
+    color: #ced4da;
+    text-decoration: none;
+}
+
+
+.sobre_nosotros {
+    padding: 5px;
+    grid-area: nosotros;
+    color: #f8f9fa;
+}
+
+.opciones_compra{
+    display: flex;
+    justify-content: space-around;
+    padding: 2px;
+
+    
+}

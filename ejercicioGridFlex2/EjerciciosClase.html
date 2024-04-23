@@ -1,0 +1,83 @@
+<!-- 
+
+EJERCICIOS DE CLASE
+
+MARIO MARTI RUBIO
+
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio 1</title>
+    <script>
+        function cambiarTexto() {
+            var parrafo = document.getElementById("parrafo");
+            parrafo.innerHTML = "¡Texto cambiado con JavaScript!";
+        }
+    </script>
+</head>
+<body>
+    <p id="parrafo">Este es un párrafo de ejemplo.</p>
+    <br>
+    <button onclick="cambiarTexto()">Haz clic aquí</button>
+</body>
+</html>
+
+
+<html>
+<head>
+    <title>Ejercicio 2</title>
+    <style>
+        .cambiar-color {background-color: yellow;}
+    </style>
+    <script>
+        function cambiarColorFondo() {
+            var caja = document.getElementById("caja");
+            caja.style.backgroundColor = "blue"; 
+        }
+    </script>
+</head>
+<body>
+    <div id="caja" class="cambiar-color" style="width: 100px; height: 100px;"></div>
+    <button onclick="cambiarColorFondo()">Haz clic aquí</button>
+</body>
+</html>
+
+
+<html>
+<head>
+    <title>Ejercicio 3</title>
+    <style>
+        .cambiar-color {background-color: yellow; cursor: pointer;}
+    </style>
+    <script>
+        function cambiarColorFondo() {
+            var caja = document.getElementById("caja");
+            caja.style.backgroundColor = "blue"; 
+        }
+    </script>
+</head>
+<body>
+    <div id="caja" class="cambiar-color" style="width: 100px; height: 100px;" onclick="cambiarColorFondo()"></div>
+</body>
+</html>
+
+
+<html>
+<head>
+    <title>Ejercicio 4</title>
+    <script>
+        function aumentarContador() {
+            var contadorElement = document.getElementById("contador");
+            var contadorActual = parseInt(contadorElement.innerText);
+            contadorActual++;
+
+            contadorElement.innerText = contadorActual;
+        }
+    </script>
+</head>
+<body>
+    <button id="contadorBtn" onclick="aumentarContador()">Haz clic aquí</button>
+    <div id="contador">0</div>
+</body>
+</html>
+-->

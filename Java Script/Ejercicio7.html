@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Ejercicio 7</title>
+</head>
+
+<body>
+    <p id="primerParrafo">Primer párrafo existente.</p>
+    <button onclick="insertarParrafo()">Insertar Párrafo</button>
+    <script>
+        function insertarParrafo() {
+            // Crear un nuevo elemento de párrafo
+            var nuevoParrafo = document.createElement("p");
+
+            // Agregar texto al nuevo párrafo (puedes modificar este texto según tus necesidades)
+            var textoNuevo = document.createTextNode("Nuevo párrafo después del primero.");
+
+            // Agregar el texto al párrafo
+            nuevoParrafo.appendChild(textoNuevo);
+
+            // Obtener el primer párrafo existente
+            var primerParrafoExistente = document.getElementById("primerParrafo");
+
+            // Insertar el nuevo párrafo después del primer párrafo existente
+            primerParrafoExistente.parentNode.insertBefore(nuevoParrafo, primerParrafoExistente.nextSibling);
+        }
+    </script>
+</body>
+
+</html>

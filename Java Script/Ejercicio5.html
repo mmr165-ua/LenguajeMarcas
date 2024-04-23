@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Ejercicio 5</title>
+</head>
+
+<body>
+    <input type="text" id="campoTexto" value="Texto original">
+    <button onclick="cambiarValor()">Cambiar Valor</button>
+    <script>
+        function cambiarValor() {
+            // Obtener el valor actual del campo de texto
+            var valorActual = document.getElementById("campoTexto").value;
+
+            // Mostrar el valor actual en la consola
+            console.log("Valor actual del campo de texto:", valorActual);
+
+            // Establecer un nuevo valor en el campo de texto
+            var nuevoValor = "Nuevo texto";
+            document.getElementById("campoTexto").value = nuevoValor;
+        }
+    </script>
+</body>
+
+</html>

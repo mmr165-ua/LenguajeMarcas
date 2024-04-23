@@ -1,0 +1,89 @@
+* {
+	box-sizing: border-box; 
+	margin: 0px;
+	padding: 0px;
+}
+
+body {
+	padding: 20px;
+}
+
+.container {
+	display: grid;
+	grid-template-rows: 0.5fr 5fr 0.5fr;
+	grid-template-columns: 0.5fr 4.5fr;
+	grid-template-areas: 
+		"header header"
+		"barra cuerpo"
+		"pie pie";
+	gap: 10px;
+	
+
+}
+
+/* Cabecera de la página */
+header {
+	grid-area: header;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	padding: 10px;
+	border-bottom: solid 5px grey;
+}
+
+/* Menú lateral */
+nav {
+	grid-area: barra;
+	display: flex;
+	flex-direction: column;
+	padding: 10px;
+	gap: 20px;
+}
+
+main {
+	grid-area: cuerpo;
+	display: flex;
+	flex-wrap: wrap;
+	padding: 10px;
+	gap: 20px;
+	justify-content: center;
+}
+
+article {
+	display: flex;
+	flex-direction: column;
+	border: 3px;
+	padding: 20px;
+	border: solid 1px grey;
+	border-radius: 5%;
+	text-align: center;
+	gap: 10px;
+	width: min-content;
+}
+
+footer {
+	grid-area: pie;
+	border-top: solid 5px grey;
+	padding: 30px;
+	display: flex;
+	gap: 10px;
+	align-items: flex-start;
+	justify-content: space-between;
+	padding: 10px;
+}
+
+.social{
+	display: flex;
+	gap: 7px;
+}
+
+article img {
+	width: 480px;
+	border-radius: 10%;
+}
+
+.social img{
+	border-radius: 15%;
+	width: 60px;
+}
+

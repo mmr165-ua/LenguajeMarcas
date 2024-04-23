@@ -1,0 +1,143 @@
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Ejemplo de ÁREAS con Grid</title>
+	<style>
+        div {
+            background-color: black;
+        }
+
+        body{
+            display: grid;
+            width: 500;
+            height: 200px;
+            gap: 5px;
+            grid-template-columns: repeat(5, 1fr);
+            grid-template-rows: repeat(7, 1fr);
+            grid-template-areas: 
+                "a1 a1 a1 a1 a1"
+                "a2 a3 a4 a5 a5"
+                "a2 a3 a6 a6 a7"
+                "a2 a3 a8 a8 a9"
+                "a10 a10 a11 a12 a12"
+                "a10 a10 a11 . ."
+                "a10 a10 a11 a13 a13";
+        }
+
+        .item01 {
+            grid-area: a1;
+        }
+
+        .item02 {
+            grid-area: a2;
+            display: grid;
+            gap: 5px;
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(2,1fr);
+            grid-template-areas: 
+                "a2a"
+                "a2b";
+            background-color: white;
+
+        }
+
+        .item02a{
+            grid-area: a2a;
+        }
+
+        .item02b{
+            grid-area: a2b;
+        }
+
+        .item03 {
+            grid-area: a3;
+        }
+        
+        .item04{
+            grid-area: a4;
+        }
+
+        .item05{
+            grid-area: a5;
+        }
+
+        .item06 {
+            grid-area: a6;
+        }
+
+        .item07 {
+            grid-area: a7;
+        }
+        
+        .item08{
+            grid-area: a8;
+        }
+
+        .item09{
+            grid-area: a9;
+        }
+
+        .item010 {
+            grid-area: a10;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            grid-template-areas: "a10a a10a" "a10b a10c";
+            gap: 5px;
+            background-color: white;
+        }
+
+        .item010a{
+            grid-area: a10a;
+        }
+
+        .item010b{
+            grid-area: a10b;
+        }
+
+        .item010c{
+            grid-area: a10c;
+        }
+
+        .item011 {
+            grid-area: a11;
+        }
+        
+        .item012{
+            grid-area: a12;
+        }
+
+        .item09{
+            grid-area: a13;
+        }
+
+        
+
+	</style>
+</head>
+<body class='contenedor'>
+		
+	<div class="item01"></div>
+	<div class="item02">
+		<div class="item02a"></div>
+		<div class="item02b"></div>
+	</div>
+	<div class="item03"></div>
+	<div class="item04"></div>
+	<div class="item05"></div>
+	<div class="item06"></div>
+	<div class="item07"></div>
+	<div class="item08"></div>
+	<div class="item09"></div>
+	<div class="item010">
+		<div class="item010a"></div>
+		<div class="item010b"></div>
+		<div class="item010c"></div>
+	</div>
+	<div class="item011"></div>
+	<div class="item012"></div>
+	<div class="item013"></div>
+		
+</body>
+</html>

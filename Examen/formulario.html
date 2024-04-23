@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Formulario de Examen</title>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			background-color: #f4f4f4;
+			padding-left: 25%;
+			padding-right: 25%;
+			padding-top: 20px;
+		}
+		h2 {
+			text-align: center;
+			margin-bottom: 20px;
+		}
+
+		form {
+			background-color: white;
+			padding: 20px;
+			margin: 0 auto;
+		}
+
+		label {
+			margin-bottom: 10 px;
+		}
+
+		textarea {
+			display: block;
+			padding: 10px;
+			border: 1px solid #ccc;
+		}
+
+		input[type=text], select{
+			display: block;
+			margin-bottom: 20px;
+			width: 80%;
+			padding:10px; 
+		}
+
+		input[type=password], select{
+			display: block;
+			margin-bottom: 20px;
+			width: 80%;
+			padding:10px; 
+		}
+
+		input[type=submit]{
+			display: block;
+			margin-bottom: 20px;
+			margin: 10px;
+			padding:10px; 
+			background-color: rgb(98, 144, 243);
+		}
+
+		fieldset{
+			padding: 10px;
+			border: none;
+			margin: 5px;
+		}
+
+		
+
+	</style>
+</head>
+<body>
+	<h2>Formulario de Examen</h2>
+	
+	<form action="" method="post">
+		<label for="nombre">Nombre:</label>
+		
+		<input type="text" id="nombre" name="nombre">
+		<label for="contrasena">Contraseña:</label>
+		
+		<input type="password" id="contrasena" name="contrasena">
+  		<label for="ciudad">Ciudad:</label>
+		
+		<select id="ciudad" name="ciudad">
+			<option value="madrid">Madrid</option>
+			<option value="barcelona">Barcelona</option>
+			<option value="valencia">Valencia</option>
+		</select><br>
+  
+		<fieldset>
+			<legend>Género:</legend>	
+			<input type="radio" id="genero_m" name="genero" value="masculino">
+			<label for="genero_m">Masculino</label>
+			<input type="radio" id="genero_f" name="genero" value="femenino">
+			<label for="genero_f">Femenino</label>
+		</fieldset>
+  
+		<fieldset>
+			<legend>Aficiones:</legend>	
+			<input type="checkbox" id="interes1" name="interes[]" value="deporte">
+			<label for="interes1">Deporte</label>
+			<input type="checkbox" id="interes2" name="interes[]" value="musica">
+			<label for="interes2">Música</label>
+			<input type="checkbox" id="interes3" name="interes[]" value="lectura">
+			<label for="interes3">Lectura</label>
+		</fieldset>
+  
+		<label for="mensaje">Mensaje:</label>
+		<textarea id="mensaje" name="mensaje" rows="4" cols="40"></textarea>
+  
+		<input type="submit" value="Enviar">
+	</form>
+</body>
+</html>
+

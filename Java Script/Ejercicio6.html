@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Ejercicio 6</title>
+</head>
+
+<body>
+    <button onclick="agregarParrafo()">Agregar Párrafo</button>
+    <script>
+        function agregarParrafo() {
+            // Crear un nuevo elemento de párrafo
+            var nuevoParrafo = document.createElement("p");
+
+            // Agregar texto al nuevo párrafo (puedes modificar este texto según tus necesidades)
+            var textoNuevo = document.createTextNode("Este es un nuevo párrafo.");
+
+            // Agregar el texto al párrafo
+            nuevoParrafo.appendChild(textoNuevo);
+
+            // Obtener el cuerpo del documento
+            var cuerpoDocumento = document.body;
+
+            // Agregar el nuevo párrafo al final del cuerpo del documento
+            cuerpoDocumento.appendChild(nuevoParrafo);
+        }
+    </script>
+</body>
+
+</html>
