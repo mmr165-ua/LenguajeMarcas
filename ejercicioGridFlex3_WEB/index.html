@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <title>Tienda Virtual con Flex y Grid</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+	
+        <!-- Hoja de estilos -->
+        <link rel="stylesheet" href="css/estilo.css" >
+    </head>
+
+    <body class="contenedor_body">
+		<header class="contenedor_cabecera">
+			<!-- Barra navegacion superior (fondo negro) -->
+			<section class="barra_superior">
+				<div>
+					<img src="img/icono_sobre.png"></i>
+					soporte@email.com
+				</div>
+				<div>
+					<img src="img/icono_telf.png"></i>
+					+012-345-6789
+				</div>
+			</section>
+        
+			<!-- Barra de navegacion central (menús) -->
+			<nav class="barra_central">
+				<ul class="menu_opciones">
+					<li><a href="#">Inicio</a></li>
+					<li><a href="#">Catálogo</a></li>
+					<li><a href="#">Ofertas</a></li>
+					<li><a href="#">Mi Cuenta</a></li>
+					<li><a href="#">Contacto</a></li>
+					<li><a href="#">Salir</a></li>
+				</ul>
+				<a href="#">Mi Cuenta</a>
+			</nav>  
+        
+			<!-- Barra de navegacion inferior (Logo, buscar y carrito) -->
+			<section class="barra_inferior">
+				<a href="index.html">
+					<img src="img/logo.png" alt="Logo">
+				</a>
+
+				<div class="buscar">
+					<input type="text" placeholder="Buscar">
+					<a href="#"><img src="img/icono_lupa.png"></a>
+				</div>
+
+				<div class="usuario">
+					<a href="#" class="btn_corazon">
+						<img src="img/icono_corazon.png">
+						<span>(0)</span>
+					</a>
+					<a href="#" class="btn_carrito">
+						<img src="img/icono_carrito.png">
+						<span>(0)</span>
+					</a>
+				</div>
+			</section>
+		</header>
+		
+		<main>
+			<section class="main_fila_1">
+				<div class="fila1_col1">
+					<nav class="menu_opciones_vertical">
+						<a href="#">Inicio</a>
+						<a href="#">Mejor Valorados</a>
+						<a href="#">Novedades</a>
+						<a href="#">Ropa de niño/a</a>
+						<a href="#">Ropa de Mujer</a>
+						<a href="#">Ropa de Hombre</a>
+						<a href="#">Accesorios</a>
+					</nav>
+				</div>
+				<div class="fila1_col2">
+					<img src="img/slider-1.jpg" alt="Slider Image" />
+				</div>
+				<div class="fila1_col3">
+					<img src="img/category-1.jpg" />
+					<img src="img/category-2.jpg" />
+				</div>
+			</section>
+			
+			<section class="main_fila_2">
+				<div class="main_fila2_contenido">
+					<img src="img/img_mastercard.png">
+					<h2>Pago Seguro</h2>
+					<p>Esto es un texto descriptivo de ejemplo.</p>
+				</div>
+				<div class="main_fila2_contenido">
+					<img src="img/img_envios.png"></i>
+					<h2>Envíos</h2>
+					<p>Esto es un texto descriptivo de ejemplo.</p>
+				</div>
+				<div class="main_fila2_contenido">
+					<img src="img/img_devoluciones.png">
+					<h2>Devoluciones</h2>
+					<p>Esto es un texto descriptivo de ejemplo.</p>
+				</div>
+				<div class="main_fila2_contenido">
+					<img src="img/img_soporte.png">
+					<h2>Soporte</h2>
+					<p>Esto es un texto descriptivo de ejemplo.</p>
+				</div>
+			</section>
+
+			<!-- Fila 3: Llámanos para pedir información -->
+			<section class="main_fila_3">
+				<h1>Llámanos para más información</h1>
+				<a href="tel:0123456789">+012-345-6789</a>
+			</section>
+
+			<!-- Fila 4: Novedades -->
+			<section class="main_fila_4">
+                <div class="cabecera_novedades">
+                    <h1>Novedades</h1>
+                </div>
+				<div class="contenedor_novedades">
+					<div class="elem_novedades">
+						<div class="nombre_articulo">
+							<a href="#">Nombre Producto</a>
+						</div>
+						<div class="imagen_articulo">
+							<a href="#"><img src= "img/product-1.jpg" alt="Imagen de articulo"></a>
+						</div>
+						<div class="precio">
+							<span><p class="num_precio">99</p><p class="simbolo_e">€</p></span>
+							<a class="btn" href="">Comprar</a>
+						</div>
+					</div>
+					<div class="elem_novedades">
+						<div class="nombre_articulo">
+							<span><a href="#">Nombre Producto</a>
+						</div>
+						<div class="imagen_articulo">
+							<a href="#"><img src= "img/product-2.jpg" alt="Imagen de articulo"></a>
+						</div>
+						<div class="precio">
+							<span><p class="num_precio">99</p><p class="simbolo_e">€</p></span>
+							<a class="btn" href="">Comprar</a>
+						</div>
+					</div>
+					<div class="elem_novedades">
+						<div class="nombre_articulo">
+							<a href="#">Nombre Producto</a>
+						</div>
+						<div class="imagen_articulo">
+							<a href="#"><img src= "img/product-3.jpg" alt="Imagen de articulo"></a>
+						</div>
+						<div class="precio">
+							<span><p class="num_precio">99</p><p class="simbolo_e">€</p></span>
+							<a class="btn" href="">Comprar</a>
+						</div>
+					</div>
+					<div class="elem_novedades">
+						<div class="nombre_articulo">
+							<a href="#">Nombre Producto</a>
+						</div>
+						<div class="imagen_articulo">
+							<a href="#"><img src= "img/product-4.jpg" alt="Imagen de articulo"></a>
+						</div>
+						<div class="precio">
+							<span><p class="num_precio">99</p><p class="simbolo_e">€</p></span>
+							<a class="btn" href="">Comprar</a>
+						</div>
+					</div>
+				</div>
+			</section>
+			
+			<section class="main_fila_5">
+				<div class="contenedor_comentarios">
+					<div class="comentario_img">
+						<img src="img/review-1.jpg" alt="Imagen de usuario">
+					</div>
+					<div class="comentario_texto">
+						<h2>Nombre de Usuario</h2>
+						<h3>Profesión</h3>
+						<p>
+							Me encanta esta tienda online. Tiene muy buen servicio y la atención al cliente es genial. Los envíos son muy rápidos!
+						</p>
+					</div>
+                </div>
+				
+				<div class="contenedor_comentarios">
+					<div class="comentario_img">
+						<img src="img/review-2.jpg" alt="Imagen de usuario">
+					</div>
+					<div class="comentario_texto">
+						<h2>Nombre de Usuario</h2>
+						<h3>Profesión</h3>
+						<p>
+							Me encanta esta tienda online. Tiene muy buen servicio y la atención al cliente es genial. Los envíos son muy rápidos!
+						</p>
+					</div>
+                </div>
+			</section>
+		</main>
+		
+		<footer class="contenedor_pie">
+			<section class="sobre_nosotros">
+				<div class="sobre_nosotros_col1">
+					<h2>¿Dónde estamos?</h2>
+					<div class="info">
+						<p>Petrer, Alicante, España</p>
+						<p>soporte@email.com</p>
+						<p>+123-456-7890</p>
+					</div>
+				</div>
+				<div class="sobre_nosotros_col2">
+					<h2>Síguenos</h2>
+					<div class="info">
+						<div><a href="#"><img src="img/social-1.png"></a></div>
+						<div><a href="#"><img src="img/social-2.png"></a></div>
+						<div><a href="#"><img src="img/social-3.png"></a></div>
+						<div><a href="#"><img src="img/social-4.png"></a></div>
+						<div><a href="#"><img src="img/social-5.png"></a></div>
+					</div>
+				</div>
+				<div class="sobre_nosotros_col3">
+					<h2>Contacto</h2>
+					<div class="info">
+						<a href="#">Sobre nosotros</a>
+						<a href="#">Política de privacidad</a>
+						<a href="#">Términos y condiciones</a>
+					</div>
+				</div>
+				<div class="sobre_nosotros_col4">
+					<h2>Información</h2>
+					<div class="info">
+						<a href="#">Política de pagos</a>
+						<a href="#">Política de envíos</a>
+						<a href="#">Política de devoluciones</a>
+					</div>
+				</div>
+			</section>
+			
+			<section class="copyright">
+				<div class="copyright_texto">
+					<p>Copyright &copy; <a href="#">Mi tienda online</a>. Todos los derechos reservados.</p>
+				</div>
+				<div class="copyright_disenyo">
+					<p>Diseñado por <a href="#">IES Poeta Paco Mollá</a></p>
+				</div>
+			</section>
+		</footer>
+	
+	</body>
+</html>
